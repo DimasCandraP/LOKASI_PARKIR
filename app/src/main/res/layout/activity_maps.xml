@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btnArahkan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arahkan ke Lokasi Parkir"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#673AB7"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="90dp" />
+
+    <Button
+        android:id="@+id/btnZoomIn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:textSize="22sp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="20dp" />
+
+    <Button
+        android:id="@+id/btnZoomOut"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:textSize="22sp"
+        android:backgroundTint="#F44336"
+        android:textColor="@android:color/white"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="20dp" />
+
+</FrameLayout>
